@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: var(--dark-grey);
+  background-color: var(--dark-grey);
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   padding: 30px;
@@ -40,7 +40,7 @@ h1 {
   display: none;
   background-color: var(--light-grey);
   color: var(--black);
-  width: 50%;
+  max-width: 100%;
   margin: 20px auto;
   height: 300px;
   border-radius: 10px;
@@ -59,11 +59,11 @@ main {
   background-color: var(--light-grey);
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin: auto;
   justify-items: center;
-  width: 50%;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -78,8 +78,10 @@ main {
 }
 
 .die {
-  width: 40px;
-  height: 40px;
+  width: 15%;
+  max-width: 60px;
+  min-width: 40px;
+  height: 15%;
   text-align: center;
   line-height: 40px;
   font-size: 2rem;
@@ -107,7 +109,8 @@ input[type="radio"]:disabled + label {
 
 .btn {
   cursor: pointer;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   margin: 10px 0 10px 0.5rem;
   color: var(--black);
   background-color: var(--gold);
@@ -132,9 +135,37 @@ input[type="radio"]:disabled + label {
   transform: scale(0.98);
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+    font-size: 1rem;
+  }
 
+  main {
+    width: 100%;
+  }
+
+  .die {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    max-width: 180px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
 
 @media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
   main {
     width: 90%;
   }
@@ -142,5 +173,24 @@ input[type="radio"]:disabled + label {
   .rules-container {
     width: 90%;
   }
-  
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .die {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    margin-bottom: 20px;
+  padding-bottom: 38px;
+  }
+
+  .btn {
+    max-width: 160px;
+  }
 }
