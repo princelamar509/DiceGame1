@@ -11,9 +11,9 @@
   --light-grey: #f5f6f7;
   --black: #000;
   --white: #fff;
-  --grey: #6a6a6f;
-  --golden-yellow: #fecc4c;
-  --yellow: #7d5a02;
+  --grey: #3b3b48;
+  --golden-yellow: #e4a401;
+  --yellow: #9f7710;
   --gold: #ac7515;
   --orange: #513204;
   --dark-orange: #f3960a;
@@ -69,6 +69,10 @@ main {
 
 #dice {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15px;
   justify-content: space-around;
   margin-bottom: 15px;
 }
@@ -77,6 +81,11 @@ main {
   width: 40px;
   height: 40px;
   text-align: center;
+  line-height: 40px;
+  font-size: 2rem;
+  color: var(--black);
+  background-color: var(--white);
+  white-space: nowrap;
   margin-right: 15px;
   border: 4px solid var(--black);
   padding: 10px;
@@ -121,16 +130,16 @@ input[type="radio"]:disabled + label {
 
   .rules-container {
     width: 100%;
+    height: 250px;
   }
 
   #dice {
     flex-direction: column;
-  }
-
-  .die {
-    margin-right: 0;
+    align-items: center;
     margin-bottom: 15px;
   }
+
+  
 
   .btn {
     width: 100%;
@@ -139,8 +148,8 @@ input[type="radio"]:disabled + label {
 
 @media screen and (max-width: 480px) {
   main {
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0.5rem;
     padding: 10px;
     margin: 0;
@@ -151,8 +160,8 @@ input[type="radio"]:disabled + label {
 
 @media screen and (max-width: 320px) {
   main {
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0.5rem;
     padding: 10px;
     margin: 0;
