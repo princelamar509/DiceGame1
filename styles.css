@@ -111,14 +111,26 @@ input[type="radio"]:disabled + label {
   background-image: linear-gradient(var(--yellow), var(--dark-orange));
 }
 
-@media (max-width:786px) {
+@media screen and (max-width: 600px) {
   main {
     width: 100%;
   }
-}
 
-@media (max-width: 1200px) {
-  .btn {
-    width: 120px;
+  .rules-container {
+    width: 100%;
   }
+
+  #dice {
+    flex-direction: column;
+  }
+
+  .die {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  
 }
