@@ -119,3 +119,28 @@ input[type="radio"]:disabled + label {
 .btn:hover:enabled {
   background-image: linear-gradient(var(--yellow), var(--dark-orange));
 }
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+
+  .rules-container {
+    width: 90%;
+  }
+  
+}
