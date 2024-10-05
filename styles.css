@@ -7,16 +7,16 @@
 }
 
 :root {
-  --dark-grey: #2b4b34bd;
+  --dark-grey: #170617bd;
   --light-grey: #f5f6f7;
   --black: #000;
   --white: #fff;
   --grey: #3b3b48;
-  --golden-yellow: #e4a401;
-  --yellow: #9f7710;
-  --gold: #ac7515;
-  --orange: #513204;
-  --dark-orange: #f3960a;
+  --golden-yellow: #b965aa;
+  --yellow: #282317;
+  --gold: #1d101a;
+  --orange: #2e2414;
+  --dark-orange: #e1bff3;
 }
 
 body {
